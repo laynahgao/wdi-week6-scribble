@@ -1,0 +1,12 @@
+{% extends 'scribble/base.html' %}
+{% block content %}
+
+<!-- <<img src="{{ comment.preview_url }}" alt="Album Photo" class="artist-photo"/>  -->
+
+<h2><a href =" {% url 'comment_edit' id=comment.id %}">(edit)</a> </h2>
+
+<p>
+<strong>author:</strong>{{ comment.author}}<br/>
+<strong>body:</strong>{{ comment.body}}<br/>
+</p>
+{% endblock %}

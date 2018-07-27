@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1, 0">
+  <link rel="stylesheet" href="{% static 'css/scribble.css' %}">
+  <title></title>
+</head>
+<body>
+  <h1>Scribble</h1>
+
+    <nav>
+      <a href="/posts">Posts</a>
+      <a href="/comments">Comments</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
